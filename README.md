@@ -1,6 +1,3 @@
-# Zero-Grad-ML
----
-
 # 🧠 Machine Learning Bootcamp
 
 This repository contains materials and projects from the **ML Bootcamp** by **Ahmad Mostafa**, powered by **Zero Grad**.
@@ -36,9 +33,12 @@ Python, Pandas, NumPy, Scikit-learn, TensorFlow, Keras, Streamlit, BeautifulSoup
 
 ```
 ML-Bootcamp/
-├── Notebooks/
-├── Projects/
+├── Python/
+├── DataAnalysis/
+├── ML/
+├── DL/
 └── README.md
+
 ```
 
 ---
