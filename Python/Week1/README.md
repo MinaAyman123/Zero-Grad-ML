@@ -46,46 +46,67 @@ A single-player game where you try to guess a randomly generated number based on
 ---
 
 ## 🚀 How to Run
+لأأكيد! إليك بقية الـ README باللغة الإنجليزية وبأسلوب احترافي، تكملة للقسم السابق:
 
-1. Clone the repo:
+---
+
+````markdown
+## 🚀 How to Run
+
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/YourUsername/YourRepoName.git
    cd YourRepoName
 ````
 
-2. Run the desired game:
+2. **Run the games**:
 
-   * **Tic Tac Toe**:
+   * To play **Tic Tac Toe**, run:
 
      ```bash
      python tictactoe.py
      ```
 
-   * **Guess the Number**:
+   * To play **Guess the Number**, run:
 
      ```bash
      python guess_game.py
      ```
 
-   *(You can also keep both games in a single file if desired.)*
+> 💡 Make sure you have Python 3 installed and added to your system PATH.
+
+---
+
+## 📁 Project Structure
+
+```
+📦YourRepoName/
+ ┣ 📄 tictactoe.py
+ ┣ 📄 guess_game.py
+ ┗ 📄 README.md
+```
+
+You can also create a folder like `Games/` and place both files inside if you prefer organizing by category.
+
+---
+
+## 📌 Note
+
+This project is still under development and may be updated with new features or improvements.
 
 ---
 
 ## 👨‍💻 Author
 
 **Mina Ayman**
-*Built as a Python practice project.*
+Python Beginner Projects | Game Logic Practice
 
 ---
 
-> 📌 *This project is open for improvements. Contributions are welcome!*
+## 🤝 Contributing
 
-```
+Pull requests are welcome! If you’d like to improve the game or add new features, feel free to fork the repo and submit a PR.
 
----
 
-Let me know if:
-- You want to split the two games into separate `.py` files.
-- You’d like a version of the README with emojis removed or more technical.
-- You want the file ready to copy/paste or downloaded as `README.md`.
-```
+
+
