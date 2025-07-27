@@ -1,112 +1,81 @@
+
 # 🎮 Python Mini Games
 
-This repository contains two simple yet interactive Python terminal games:
-
-1. **Tic Tac Toe**
-2. **Guess the Number**
-
-Both games are written in pure Python and are ideal for beginners who want to practice basic logic, functions, loops, and conditionals.
+This repository contains **three simple terminal-based Python games**, perfect for beginners to practice programming logic, conditionals, loops, and functions.
 
 ---
 
-## 🕹️ Game 1: Tic Tac Toe
+## 🧠 Games Included
 
-A classic 2-player turn-based Tic Tac Toe game played in the terminal.
-
-### ✅ Features:
-- 3x3 grid board.
-- Random player selection (`X` or `O`).
-- Input validation for moves.
-- Win detection (rows, columns, diagonals).
-- Detects a draw if the board is full with no winner.
+1. ✅ **ATM Simulation**
+2. 🔢 **Guess the Number**
+3. ❌⭕ **Tic Tac Toe**
 
 ---
 
-## 🔢 Game 2: Guess the Number
+## 1️⃣ ATM Simulation
 
-A single-player game where you try to guess a randomly generated number based on difficulty level.
+A command-line simulation of an ATM machine.
 
-### 🎯 Levels:
-- **Easy**: 1 to 10 (3 attempts)
-- **Medium**: 1 to 100 (7 attempts)
-- **Hard**: 1 to 1000 (15 attempts)
+### 🔐 Features:
+- PIN authentication (3 attempts).
+- Menu with the following options:
+  - **Balance Inquiry**
+  - **Deposit**
+  - **Withdraw**
+  - **Mini Statement (last 5 transactions)**
+  - **Exit**
+- Input validation and transaction history.
+  
+### 💼 Technologies:
+- Pure Python (no external libraries)
+
+---
+
+## 2️⃣ Guess the Number
+
+A single-player guessing game where the player has to guess a random number based on a selected difficulty level.
+
+### 🎯 Difficulty Levels:
+| Level   | Range     | Attempts |
+|---------|-----------|----------|
+| Easy    | 1 - 10    | 3        |
+| Medium  | 1 - 100   | 7        |
+| Hard    | 1 - 1000  | 15       |
 
 ### 🔁 Game Flow:
-- Player selects a difficulty level.
-- Player guesses a number.
-- Hints are given ("Increase" or "Decrease") until the number is guessed or attempts run out.
+- Player selects level.
+- Hints are shown after each wrong guess:
+  - **"Increase"** if guess is too low.
+  - **"Decrease"** if guess is too high.
+- Game ends when number is guessed or attempts run out.
+
+---
+
+## 3️⃣ Tic Tac Toe
+
+A classic 2-player Tic Tac Toe game played in the terminal.
+
+### 🕹️ Features:
+- Random player assignment (`X` or `O`).
+- 3x3 board with numbered positions.
+- Input validation for moves.
+- Win detection:
+  - Rows
+  - Columns
+  - Diagonals
+- Draw detection if board is full.
 
 ---
 
 ## 🛠️ Requirements
 
-- Python 3.x  
-(No external libraries required)
-
----
-
-## 🚀 How to Run
-لأأكيد! إليك بقية الـ README باللغة الإنجليزية وبأسلوب احترافي، تكملة للقسم السابق:
-
----
-
-````markdown
-## 🚀 How to Run
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/YourUsername/YourRepoName.git
-   cd YourRepoName
-````
-
-2. **Run the games**:
-
-   * To play **Tic Tac Toe**, run:
-
-     ```bash
-     python tictactoe.py
-     ```
-
-   * To play **Guess the Number**, run:
-
-     ```bash
-     python guess_game.py
-     ```
-
-> 💡 Make sure you have Python 3 installed and added to your system PATH.
-
----
-
-## 📁 Project Structure
-
-```
-📦YourRepoName/
- ┣ 📄 tictactoe.py
- ┣ 📄 guess_game.py
- ┗ 📄 README.md
-```
-
-You can also create a folder like `Games/` and place both files inside if you prefer organizing by category.
+- Python 3.x
+- No external libraries needed
 
 ---
 
 ## 📌 Note
 
-This project is still under development and may be updated with new features or improvements.
-
----
-
-## 👨‍💻 Author
-
-**Mina Ayman**
-Python Beginner Projects | Game Logic Practice
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! If you’d like to improve the game or add new features, feel free to fork the repo and submit a PR.
-
-
-
+The project is still being updated and improved with more structure and features. Stay tuned for more!
 
