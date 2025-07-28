@@ -60,7 +60,7 @@ def play():
       print(check_win(board))
       break
     if check_full_board(board):
-      print("Draw")
+      print("Its Tie")
       break
     player= "O" if player=="X" else "X"
 
