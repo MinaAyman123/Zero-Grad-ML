@@ -1,4 +1,5 @@
 # Tic Tax TO
+from random import choice
 def create_empty_board():
   return [
       [1,2,3],
@@ -12,7 +13,6 @@ def show_board(board):
       print(board[i][j],end="      ")
     print()
 
-from random import choice
 def set_players():
   return choice(['X', 'O'])
 
@@ -32,21 +32,20 @@ def check_full_board(board):
       if isinstance(board[i][j],int):
         return False
   return True
-check_full_board([['X','O','X'],['X','O','X'],['X','O','X']])
 
 def check_win(board):
     for row in board:
-        if row[0] == row[1] == row[2] and isinstance(row[0], str):
+        if row[0] == row[1] == row[2] :
             return f"{row[0]} wins"
 
     for col in range(3):
-        if board[0][col] == board[1][col] == board[2][col] and isinstance(board[0][col], str):
+        if board[0][col] == board[1][col] == board[2][col]:
             return f"{board[0][col]} wins"
 
-    if board[0][0] == board[1][1] == board[2][2] and isinstance(board[0][0], str):
+    if board[0][0] == board[1][1] == board[2][2] :
         return f"{board[0][0]} wins"
 
-    if board[0][2] == board[1][1] == board[2][0] and isinstance(board[0][2], str):
+    if board[0][2] == board[1][1] == board[2][0] :
         return f"{board[0][2]} wins"
 
 def play():
@@ -57,11 +56,12 @@ def play():
     take_input(board,player)
     show_board(board)
     if check_win(board):
-      print(check_win(board))
+      print(f"{player} is win")
       break
     if check_full_board(board):
       print("Its Tie")
       break
     player= "O" if player=="X" else "X"
 
-play()
+if __name__=='__main__':
+  play()
