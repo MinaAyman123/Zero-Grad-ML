@@ -1,38 +1,79 @@
 from random import choice
-nTrail=10
 
-def Choice_Word():
-    return choice(['Mina','Bab','Gdo'])
+def Message():
+    print("Welcome in Guess Word")
 
-def display_Word(word,Letter_list):
-    for letter in word:
-        if letter in Letter_list:
-            print(letter,end='')
+def Choice_Level():
+    print("PLease enter Level\n - Easy\n - Meduim\n - Hard")
+    levels = {'Easy': 15, 'Medium': 10, 'Hard': 6}
+    while True:
+        level=input("Level : ").capitalize()
+        if level in levels:
+            return levels[level]
+        print('Please enter Valid Level')
+
+def Choice_word():
+    print("Choose a category:\n - Animal\n - City\n - Food\n - Job\n - Nation")
+    dic={
+        "Animal" : ['Cat','Dog','Lion','Elephant','Zebra','Monkey','Dolphin','Tiger','Giraffe','Bear','Kangaroo','Crocodile','Horse','Panda','Wolf','Fox','Deer','Rabbit','Owl','Camel','Shark','Penguin'],
+        'City' : ['Cairo','Paris','Tokyo','New York','Sydney','London','Dubai','Rome','Berlin','Toronto','Istanbul','Beijing','Madrid','Buenos Aires','Moscow','Athens','Los Angeles','Chicago','Seoul','Bangkok'],
+        'Food' : ['Pizza' , 'Rice', 'Chicken', 'Burger', 'Pasta', 'Sushi', 'Salad', 'Sandwich', 'Steak', 'Ice cream', 'Tacos','Fruits','Soup','Noodles','Cake','Curry','Bread','Chocolate','Fries','Dumplings' ],
+        'Job' : ['Engineer' , 'Doctor', 'Teacher', 'Chef', 'Pilot', 'Artist', 'Accountant', 'Lawyer', 'Nurse', 'Mechanic','Scientist','Dentist','Firefighter','Pharmacist','Driver','Plumber','Electrician','Photographer','Architect'],
+        'Nation' : ['Egypt' , 'France', 'Japan', 'Brazil', 'Canada', 'India', 'China', 'Germany', 'Mexico', 'South Africa','Russia','Spain','Italy','Argentina','Nigeria','Thailand','Turkey','Sweden','Norway','Pakistan']
+    }
+    while True:
+        ch=input("Your Choice : ").title()
+        if ch in dic.keys():
+            print("Word Selected")
+            return choice(dic[ch])
+        print("please enter valid choice")
+
+def Show_Word(word,lis_word):
+
+    result=[]
+    for i, ch in enumerate(word):
+        if  lis_word.count(ch) > word[:i+1].count(ch)-1:
+            result.append(ch)
         else:
-            print('-',end='')
-    print()
+            result.append('-')
+    print("Word:", ''.join(result))
 
-def guess_validation(letter_list,trial, word):
-        while True:
-            letter=input("Please enter Single Letter : ")
-            if len(letter)==1 and letter not in letter_list and letter in word:
-                letter_list.append(letter)
-                return trial
-            trial+=1
-            if trial==nTrail:
-                return "Lost the Game"
-            print("Please Aenter one letter")
+
+def take_input(word,lis_word,ntime):
+    while True:
+        letter=input("Letter : ")
+        if (letter in word and letter not in lis_word) or (word.count(letter) != lis_word.count(letter)):
+            print("Correct guess")
+            lis_word.append(letter)
+            return ntime
+        elif len(letter)!=1:
+            print('Please Enter single Letter')
+        elif ntime==0:
+            return 0
+        else:
+            print("Please enter valid Letter")
+        ntime-=1
+
+
 
 def play():
-    word=Choice_Word()
-    letter_li=[]
-    trial=0
+    Message()
+    ntime=Choice_Level()
+    word=Choice_word()
+    lis_word=[]
     while True:
-        trial=guess_validation(letter_li,trial,word)
-        if trial=='Lost the Game':
-            print(f"Lost the Game the Word {word}")
+        Show_Word(word,lis_word)
+        print(f"Attempts left: {ntime}")
+        ntime=take_input(word,lis_word,ntime)
+        print(ntime)
+        if ntime==0 :
+            print(f'You are lose the word : {word}')
             return
-        display_Word(word,letter_li)
+        if len(word) ==len(lis_word):
+            print(f"You won! The word was: {word}")
+            return
+        
 
-play()
+if __name__=='__main__':
+    play()
 
