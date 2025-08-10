@@ -45,7 +45,8 @@ Computer Choicd: Paper
 Computer Win
 --------------------------------------------------
 Are you play anther game ? (Yes / No): No
-```
+````
+
 
 ---
 
