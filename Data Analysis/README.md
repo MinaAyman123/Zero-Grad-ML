@@ -1,53 +1,73 @@
-# 📊 Data Analysis – Python Projects
+# 📊 Data Analysis Projects
 
-This folder contains a collection of **Data Analysis projects** using Python.
-The projects involve **cleaning, preprocessing, visualization, and extracting insights** from real datasets.
-
----
-
-## 📌 Projects Overview
-
-| Project                      | Dataset                  | Notebook Link                                                                                                                                 |
-| ---------------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| 🚢 Titanic Survival Analysis | `train.csv`              | [Titanic.ipynb](https://github.com/MinaAyman123/Zero-Grad-ML/tree/main/Data%20Analysis/Titanic)                               |
-| 🏪 Superstore Sales Analysis | `superstore_cleaned.csv` | [Superstore\_Sales.ipynb](https://github.com/MinaAyman123/Zero-Grad-ML/tree/main/Data%20Analysis/Superstore%20Sales) |
+This repository contains **two beginner-friendly data analysis projects** using Python. These projects are perfect for practicing **data cleaning, preprocessing, visualization, and exploratory data analysis (EDA).**
 
 ---
 
-## 📂 Folder Structure
+## 🧠 Projects Included
 
-```text
-Data Analysis/
-├── Titanic/
-│   ├── Titanic.ipynb
-│   └── README.md
-└── Superstore Sales/
-    ├── Superstore_Sales.ipynb
-    └── README.md
-```
+1. 🚢 **Titanic Dataset Analysis**
+2. 🏬 **Superstore Sales Dataset Analysis**
 
 ---
 
-## 📊 Key Insights
+## 1️⃣ Titanic Dataset Analysis
 
-### 🚢 Titanic
+An analysis of the famous Titanic dataset to explore survival patterns.
 
-* Women and children had higher survival rates.
-* First-class passengers survived more often.
-* Being alone decreased survival chances.
+### 🔍 Features:
 
-### 🏪 Superstore
+* Data Cleaning (handling missing values, removing duplicates, correcting data types).
+* Outlier Detection & Treatment.
+* Exploratory Data Analysis (EDA):
 
-* Discounts often caused negative profits.
-* Standard Class is the most common shipping mode.
-* Delivery time varies significantly depending on ship mode.
+  * Distribution of passengers (Age, Class, Sex).
+  * Survival rate by gender, class, and age groups.
+  * Correlation heatmap between features.
+
+### 📈 Visualizations:
+
+* Histograms, Barplots, and Countplots.
+* Boxplots for outlier detection.
+* Heatmaps for correlation analysis.
+
+### 💼 Technologies:
+
+* Python (Pandas, NumPy, Matplotlib, Seaborn).
 
 ---
 
-## 🔧 Tools & Libraries
+## 2️⃣ Superstore Sales Dataset Analysis
 
-* Python 3
-* Pandas
-* NumPy
-* Seaborn
-* Matplotlib
+A sales dataset analysis to uncover business insights and profit trends.
+
+### 🔍 Features:
+
+* Data Preprocessing (date formatting, categorical encoding, null handling).
+* Profitability analysis by category, sub-category, and region.
+* Shipping mode and customer segment impact on profit.
+* Time-based analysis (Order Date vs. Sales/Profit).
+
+### 📈 Visualizations:
+
+* Barplots of Profit by Product, Category, and Segment.
+* Histograms for numerical features (Sales, Profit, Discount).
+* Line plots for sales trends over time.
+* Heatmaps for correlation between Sales, Profit, and Discount.
+
+### 💼 Technologies:
+
+* Python (Pandas, NumPy, Matplotlib, Seaborn).
+
+---
+
+## 🛠️ Requirements
+
+* Python 3.x
+* Libraries:
+
+  * pandas
+  * numpy
+  * matplotlib
+  * seaborn
+
