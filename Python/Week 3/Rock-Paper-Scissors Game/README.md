@@ -45,7 +45,8 @@ Computer Choicd: Paper
 Computer Win
 --------------------------------------------------
 Are you play anther game ? (Yes / No): No
-```
+````
+
 
 ---
 
@@ -79,9 +80,3 @@ Are you play anther game ? (Yes / No): No
 
 Enjoy the game and challenge the computer! 🎯
 
-```
-
----
-
-لو تحب، أقدر أكتب لك كمان نفس الأسلوب للعبة **Prime Numbers Dictionary** عشان يبقوا التلاتة موحدين في GitHub.
-```
