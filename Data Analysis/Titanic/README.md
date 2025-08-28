@@ -1,5 +1,4 @@
 
-````markdown
 # 🚢 Titanic Survival Analysis (EDA)
 
 This repository contains an exploratory data analysis (EDA) of the **Titanic dataset** (`train.csv`).  
@@ -61,27 +60,4 @@ It includes passenger information such as:
 - **Seaborn** & **Matplotlib** (visualizations)  
 - **NumPy**  
 
----
-
-## 🚀 How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/titanic-eda.git
-````
-
-2. Navigate to the project folder:
-
-   ```bash
-   cd titanic-eda
-   ```
-3. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the script:
-
-   ```bash
-   python analysis.py
-   ```
 
