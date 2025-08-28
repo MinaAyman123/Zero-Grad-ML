@@ -1,50 +1,46 @@
-# 📊 Data Analysis Projects
+# 📊 Data Analysis – Python Projects
 
-This repository contains **Exploratory Data Analysis (EDA)** projects using Python, Pandas, Seaborn, and Matplotlib.
-Each project explores datasets, cleans data, and visualizes insights.
+This folder contains a collection of **Data Analysis projects** using Python.
+The projects involve **cleaning, preprocessing, visualization, and extracting insights** from real datasets.
 
 ---
 
-## 📂 Projects
+## 📌 Projects Overview
 
-### 🔹 1. Titanic Survival Analysis (`Titanic/`)
+| Project                      | Dataset                  | Notebook Link                                                                                                                                 |
+| ---------------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🚢 Titanic Survival Analysis | `train.csv`              | [Titanic.ipynb](https://github.com/MinaAyman123/Zero-Grad-ML/tree/main/Data%20Analysis/Titanic)                               |
+| 🏪 Superstore Sales Analysis | `superstore_cleaned.csv` | [Superstore\_Sales.ipynb](https://github.com/MinaAyman123/Zero-Grad-ML/tree/main/Data%20Analysis/Superstore%20Sales) |
 
-* Dataset: `train.csv`
-* Cleaned missing values (`Age`, `Embarked`, `Cabin`).
-* Feature engineering: **Family Size**, **Alone** feature.
-* Explored survival patterns by:
+---
 
-  * Passenger Class
-  * Sex
-  * Embarked Port
-  * Family Size / Alone
-* Visualizations: Histograms, Count plots, Box plots, Bar plots.
+## 📂 Folder Structure
 
-**Key Insights:**
+```text
+Data Analysis/
+├── Titanic/
+│   ├── Titanic.ipynb
+│   └── README.md
+└── Superstore Sales/
+    ├── Superstore_Sales.ipynb
+    └── README.md
+```
+
+---
+
+## 📊 Key Insights
+
+### 🚢 Titanic
 
 * Women and children had higher survival rates.
-* Higher-class passengers survived more often.
-* Being alone decreased survival probability.
+* First-class passengers survived more often.
+* Being alone decreased survival chances.
 
----
-
-### 🔹 2. Superstore Sales Analysis (`Superstore Sales/`)
-
-* Dataset: `superstore_cleaned.csv`
-* Cleaned duplicates and dropped unnecessary columns.
-* Feature engineering: **Delivery\_Days = Ship Date - Order Date**.
-* Explored profitability and losses:
-
-  * Categories, Segments, Ship Modes
-  * Products with negative profits
-  * Orders with delivery anomalies
-* Visualizations: Histograms, Count plots, Bar plots, Box plots, Pair plots, Heatmaps.
-
-**Key Insights:**
+### 🏪 Superstore
 
 * Discounts often caused negative profits.
-* Standard Class is the most common shipping mode but not always profitable.
-* Delivery time varies significantly by ship mode.
+* Standard Class is the most common shipping mode.
+* Delivery time varies significantly depending on ship mode.
 
 ---
 
@@ -55,5 +51,3 @@ Each project explores datasets, cleans data, and visualizes insights.
 * NumPy
 * Seaborn
 * Matplotlib
-
-
