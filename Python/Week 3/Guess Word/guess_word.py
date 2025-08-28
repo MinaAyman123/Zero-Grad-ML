@@ -41,17 +41,18 @@ def Show_Word(word,lis_word):
 
 def take_input(word,lis_word,ntime):
     while True:
+        if ntime==0:
+            return 0
         letter=input("Letter : ")
         if (letter in word and letter not in lis_word) or (word.count(letter) != lis_word.count(letter)):
+            print("#"*50)
             print("Correct guess")
             lis_word.append(letter)
             return ntime
         elif len(letter)!=1:
-            print('Please Enter single Letter')
-        elif ntime==0:
-            return 0
+            print(f'Please Enter single Letter | Attempts left: {ntime-1}')
         else:
-            print("Please enter valid Letter")
+            print(f"Please enter valid Letter | Attempts left: {ntime-1}")
         ntime-=1
 
 
@@ -65,7 +66,6 @@ def play():
         Show_Word(word,lis_word)
         print(f"Attempts left: {ntime}")
         ntime=take_input(word,lis_word,ntime)
-        print(ntime)
         if ntime==0 :
             print(f'You are lose the word : {word}')
             return
